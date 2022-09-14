@@ -1,0 +1,9 @@
+{
+  "debug" : "True",
+  "db_name" : "library_management",
+  "db_user" : "root",
+  "db_host" : "localhost",
+  "db_port" : 3306,
+  "db_password": "password",
+  "logs_path" : "/home/abhiseka/Abhi/library_managemant_system/library_management_system/logs"
+}

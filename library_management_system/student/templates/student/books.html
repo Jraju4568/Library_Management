@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #969e9e;
+}
+
+td, th {
+  border: 1px solid rgb(180, 180, 180);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+body{
+background-color: #a4ede9;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Book Details</title>
+</head>
+<body>
+<center>
+    <h2>All Books</h2>
+    <table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Status</th>
+    <th>No. of Books</th>
+  </tr>
+        {%for book in books%}
+  <tr>
+    <td>{{book.title}}</td>
+            <td>{{book.author}}</td>
+            <td>{{book.status}}</td>
+            <td>{{book.count}}</td>
+  </tr>
+        {%endfor%}
+    </table>
+    </center>
+</body>
+</html>
